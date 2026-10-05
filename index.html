@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khakimovv_ai - AI Mini Kurs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#00f2fe',
+                            purple: '#4facfe',
+                            dark: '#0a0a10',
+                            card: '#13141f',
+                            accent: '#8a2be2'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07070c;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.25);
+        }
+        .glow-btn {
+            box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
+            transition: all 0.3s ease;
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 30px rgba(79, 172, 254, 0.7);
+            transform: translateY(-2px);
+        }
+        .glass-card {
+            background: rgba(19, 20, 31, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-6">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-md flex flex-col items-center mt-4 mb-6">
+        <!-- Profile Image Wrapper -->
+        <div class="relative mb-3">
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 to-purple-600 blur opacity-75"></div>
+            <!-- SHU YERGA SURATINGIZ HAVOLASINI YOKI RASMNI QO'YING -->
+            <img 
+                src="https://yt3.googleusercontent.com/OrJUcGyqPEwjtVv4NDra0k9gonWblahEAzxG6Aa0OcriVvYOl39EbyqlwFJQn12nmvuJ0xiuSw=s900-c-k-c0x00ffffff-no-rj" 
+                alt="khakimovv_ai profile" 
+                class="relative w-28 h-28 rounded-full object-cover border-2 border-cyan-400/50 shadow-2xl"
+                id="userAvatar"
+                onerror="this.src='https://placehold.co/150x150/111827/00f2fe?text=khakimovv_ai'"
+            />
+            <div class="absolute bottom-1 right-1 bg-cyan-400 text-black text-xs p-1 rounded-full flex items-center justify-center w-6 h-6 font-bold shadow-md">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+
+        <!-- Username Tag -->
+        <h1 class="text-2xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
+            khakimovv_ai
+        </h1>
+        <p class="text-xs text-gray-400 mt-1 flex items-center gap-1">
+            <i class="fa-brands fa-youtube text-red-500 text-sm"></i> AI Darsliklar va Sun'iy Intellekt Mutaxassisi
+        </p>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="w-full max-w-md flex-1 flex flex-col gap-6">
+
+        <!-- Course Banner / Offer Card -->
+        <div class="glass-card rounded-2xl p-6 glow-effect relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-24 h-24 bg-purple-600/20 rounded-full blur-xl pointer-events-none"></div>
+            
+            <div class="inline-block px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-xs font-semibold text-cyan-300 mb-3">
+                🔥 MAXSUS TAKLIF
+            </div>
+
+            <h2 class="text-xl font-bold leading-snug mb-2 text-white">
+                Sun'iy Intellekt (AI) Boshlang'ich Mini Kursi
+            </h2>
+            <p class="text-sm text-gray-300 mb-4">
+                Neyron tarmoqlari bilan ishlash, kontent yaratish va ishingizni 10x tezlashtirishni amalda o'rganing!
+            </p>
+
+            <!-- Price Tag -->
+            <div class="flex items-baseline justify-between bg-black/40 p-3.5 rounded-xl border border-gray-800 mb-4">
+                <div>
+                    <span class="text-xs text-gray-400 block">Kurs narxi:</span>
+                    <span class="text-2xl font-black text-cyan-400">49,000 <span class="text-sm font-normal text-gray-300">SO'M</span></span>
+                </div>
+                <span class="text-xs font-medium text-red-400 line-through">150,000 SO'M</span>
+            </div>
+
+            <!-- Benefits List -->
+            <ul class="space-y-2.5 text-xs text-gray-300">
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-400 text-sm"></i>
+                    <span>Eng saralangan AI instrumentlari (ChatGPT, Midjourney va b.)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-400 text-sm"></i>
+                    <span>Amaliy topshiriqlar va video darsliklar</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-cyan-400 text-sm"></i>
+                    <span>Kanal va hamjamiyatga kirish imkoniyati</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Registration Form Card -->
+        <div class="glass-card rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-center mb-1 text-white">Ro'yxatdan o'tish</h3>
+            <p class="text-xs text-center text-gray-400 mb-5">Kursga kirish uchun ma'lumotlaringizni kiriting</p>
+
+            <form id="registrationForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <!-- Ism -->
+                <div>
+                    <label for="firstName" class="block text-xs font-medium text-gray-300 mb-1.5">Ismingiz</label>
+                    <div class="relative">
+                        <i class="fa-regular fa-user absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            required 
+                            placeholder="Ismingizni kiriting"
+                            class="w-full bg-black/50 border border-gray-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-500 outline-none transition"
+                        />
+                    </div>
+                </div>
+
+                <!-- Familiya -->
+                <div>
+                    <label for="lastName" class="block text-xs font-medium text-gray-300 mb-1.5">Familyangiz</label>
+                    <div class="relative">
+                        <i class="fa-regular fa-id-card absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            required 
+                            placeholder="Familiyangizni kiriting"
+                            class="w-full bg-black/50 border border-gray-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-500 outline-none transition"
+                        />
+                    </div>
+                </div>
+
+                <!-- Telefon Raqam -->
+                <div>
+                    <label for="phoneNumber" class="block text-xs font-medium text-gray-300 mb-1.5">Telefon raqamingiz</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-phone absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input 
+                            type="tel" 
+                            id="phoneNumber" 
+                            required 
+                            placeholder="+998 90 123 45 67"
+                            value="+998 "
+                            class="w-full bg-black/50 border border-gray-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl py-3 pl-10 pr-4 text-sm text-white placeholder-gray-500 outline-none transition"
+                        />
+                    </div>
+                </div>
+
+                <!-- Error Box -->
+                <div id="errorAlert" class="hidden p-3 bg-red-500/10 border border-red-500/30 rounded-xl text-xs text-red-400">
+                    Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.
+                </div>
+
+                <!-- Submit Button -->
+                <button 
+                    type="submit" 
+                    id="submitBtn" 
+                    class="w-full mt-2 py-3.5 px-6 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl font-bold text-sm text-white glow-btn flex items-center justify-center gap-2 cursor-pointer"
+                >
+                    <span id="btnText">Darslikni Olish (49,000 SO'M)</span>
+                    <i class="fa-solid fa-arrow-right text-xs" id="btnIcon"></i>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4 z-50">
+        <div class="glass-card max-w-sm w-full rounded-2xl p-6 text-center border border-cyan-500/40 glow-effect animate-fade-in">
+            <div class="w-16 h-16 bg-gradient-to-tr from-cyan-400 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 text-black text-2xl font-bold shadow-lg">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-2">Ajoyib! Ma'lumot qabul qilindi</h3>
+            <p class="text-xs text-gray-300 mb-6 leading-relaxed">
+                Arizangiz muvaffaqiyatli yuborildi. Mini kursni olish va darsliklarni boshlash uchun quyidagi Telegram kanalimizga o'ting!
+            </p>
+
+            <!-- SHU YERGA TELEGRAM KANALINGIZ LINKINI QO'YING -->
+            <a 
+                href="https://t.me/khakmvv" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="w-full py-3.5 px-6 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 rounded-xl font-bold text-sm text-white glow-btn inline-flex items-center justify-center gap-2"
+            >
+                <i class="fa-brands fa-telegram text-lg"></i>
+                <span>Telegram kanalga o'tish</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-md text-center py-6 text-xs text-gray-500">
+        © <span id="year"></span> khakimovv_ai. Barcha huquqlar himoyalangan.
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // TELEGRAM BOT SOZLAMALARI:
+        // Bot tokeningiz va Chat ID ingizni kiriting
+        const BOT_TOKEN = "8625259991:AAHJ53NdZTWelYEc_UMaTOYqAo_-Q6krepw"; // Telegram Bot Tokenini shu yerga qo'ying
+        const CHAT_ID = "8748852655";     // Shaxsiy Chat ID yoki Kanal/Guruh ID sini shu yerga qo'ying
+
+        // Form Submit funksiyasi
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnIcon = document.getElementById('btnIcon');
+            const errorAlert = document.getElementById('errorAlert');
+
+            errorAlert.classList.add('hidden');
+
+            // Loading holati
+            submitBtn.disabled = true;
+            btnText.textContent = "Yuborilmoqda...";
+            btnIcon.className = "fa-solid fa-spinner fa-spin text-xs";
+
+            // Telegramga yuboriladigan xabar
+            const message = `🚀 *Yangi Buyurtma (AI Mini Kurs)*\n\n` +
+                            `👤 *Ism:* ${firstName}\n` +
+                            `👤 *Familiya:* ${lastName}\n` +
+                            `📞 *Tel:* ${phoneNumber}\n` +
+                            `💰 *Narx:* 49,000 SO'M\n` +
+                            `📅 *Sana:* ${new Date().toLocaleString('uz-UZ')}`;
+
+            try {
+                // Telegram API orqali yuborish
+                if (BOT_TOKEN !== "YOUR_TELEGRAM_BOT_TOKEN" && CHAT_ID !== "YOUR_TELEGRAM_CHAT_ID") {
+                    const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            chat_id: CHAT_ID,
+                            text: message,
+                            parse_mode: 'Markdown'
+                        })
+                    });
+
+                    const data = await response.json();
+                    if (!data.ok) {
+                        throw new Error('Telegram API Error');
+                    }
+                } else {
+                    // Test rejimi uchun konsolga chiqarish (agar Bot token hali qo'yilmagan bo'lsa)
+                    console.log("Telegram Bot sozlanmagan, lekin ma'lumotlar olindi:", { firstName, lastName, phoneNumber });
+                }
+
+                // Muvaffaqiyatli yuborilgach, modalni ko'rsatish
+                document.getElementById('successModal').classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error sending message:', error);
+                errorAlert.textContent = "Ma'lumot yuborishda xatolik yuz berdi. Iltimos qaytadan urinib ko'ring yoki bot sozlamalarini tekshiring.";
+                errorAlert.classList.remove('hidden');
+            } finally {
+                // Tugmani asl holatiga qaytarish
+                submitBtn.disabled = false;
+                btnText.textContent = "Darslikni Olish (49,000 SO'M)";
+                btnIcon.className = "fa-solid fa-arrow-right text-xs";
+            }
+        }
+    </script>
+</body>
+</html>
